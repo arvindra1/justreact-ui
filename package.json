@@ -1,7 +1,7 @@
 {
-  "name": "react-card-component",
+  "name": "justreact-ui",
   "version": "0.0.1-beta.5.9.3",
-  "description": "React Card Component",
+  "description": "justreact-ui is a ui library ",
   "main": "./lib/index.js",
   "files": [
     "lib"
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joon610/react-card-component.git"
+    "url": "git+https://github.com/arvindra1/justreact-ui.git"
   },
-  "author": "joon610",
+  "author": "arvindra1",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joon610/react-card-component/issues"
+    "url": "https://github.com/arvindra1/justreact-ui/issues"
   },
-  "homepage": "https://github.com/joon610/react-card-component#readme",
+  "homepage": "https://github.com/arvindra1/justreact-ui#readme",
   "peerDependencies": {
     "react": ">=17.0.1",
     "react-dom": ">=17.0.1",
