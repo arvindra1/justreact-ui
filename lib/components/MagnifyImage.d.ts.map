@@ -1,0 +1,1 @@
+{"version":3,"file":"MagnifyImage.d.ts","sourceRoot":"","sources":["../../src/components/MagnifyImage.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAmB,MAAM,OAAO,CAAC;AAExC,UAAU,SAAS;IACjB,GAAG,EAAE,MAAM,CAAC;IACZ,GAAG,EAAE,MAAM,CAAC;IACZ,KAAK,CAAC,EAAE,MAAM,CAAC;IACf,MAAM,CAAC,EAAE,MAAM,CAAC;CACjB;AAED,eAAO,MAAM,QAAQ,gCAA6C,SAAS,sBA+C1E,CAAC"}

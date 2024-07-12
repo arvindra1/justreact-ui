@@ -1,3 +1,4 @@
-import { Card } from './components/Card'
+import { Card } from "./components/Card";
+import { ImageMag } from "./components/MagnifyImage";
 
-export default Card;
+export { Card, ImageMag };

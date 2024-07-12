@@ -24,6 +24,8 @@
 
 [Demo](https://arvindra1.github.io/justreact-ui/)
 
+## CARD-1
+
 ## `Props`
 
 ### glass, glassOption
@@ -76,3 +78,18 @@
   const NewCard = () => <Card outlined><div>HelloWorld</div></Card>);
 ```
 # justreact-ui
+## Magnify-image (e-commerce)
+
+
+# `Props` 
+
+### src, alt, width, height
+
+600px is the default width and height.
+
+```js
+import { Card, ImageMag } from "justreact-ui";
+  const NewCard = () => <ImageMag src="path/url" alt="alternative" width={600} height={600} >);
+```
+
+

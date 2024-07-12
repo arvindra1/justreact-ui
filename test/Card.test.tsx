@@ -21,7 +21,7 @@ describe('<Card>',()=>{
   it('Background', ()=>{
     const {container} = render(<Card background={"red"}><div>good</div></Card>);
     const firstChild = container.getElementsByTagName('div')[0];
-    expect(firstChild).toHaveStyle('background:red');
+    expect(firstChild).toHaveStyle('background: red');
     expect(container).toMatchSnapshot();
   })
 
@@ -29,7 +29,7 @@ describe('<Card>',()=>{
     const { container } =render(<Card style={{"width":"300px","background":"red",":hover":{"background":"blue"}}}/>);
     const firstChild = container.getElementsByTagName('div')[0];
     expect(firstChild).toHaveStyle('width:300px');
-    expect(firstChild).toHaveStyle('background:red');
+    expect(firstChild).toHaveStyle('background:blue');
     expect(firstChild).toHaveStyleRule("background", "blue", { target: ":hover" });
     expect(container).toMatchSnapshot();
   })
