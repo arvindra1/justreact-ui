@@ -5,9 +5,16 @@ interface imageprop {
   alt: string;
   width?: number;
   height?: number;
+  scale?: number | 2 | 3 | 4 | 5 | 6;
 }
 
-export const ImageMag = ({ src, alt, width = 600, height = 600 }: imageprop) => {
+export const ImageMag = ({
+  src,
+  alt,
+  width = 600,
+  height = 600,
+  scale = 2,
+}: imageprop) => {
   const [zoom, setZoom] = useState<boolean>(false);
   const [position, setPosition] = useState<any>({ x: 0, y: 0 });
 
@@ -44,8 +51,8 @@ export const ImageMag = ({ src, alt, width = 600, height = 600 }: imageprop) => 
             src={src}
             alt={alt}
             style={{
-              width: `${width * 2}px`,
-              height: `${height * 2}px`,
+              width: `${width * scale}px`,
+              height: `${height * scale}px`,
               transform: `translate(-${position.x}%, -${position.y}%)`,
               transformOrigin: "0 0",
             }}

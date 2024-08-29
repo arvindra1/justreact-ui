@@ -77,11 +77,44 @@
   import Card from 'justreact-ui';
   const NewCard = () => <Card outlined><div>HelloWorld</div></Card>);
 ```
+
+## ColorPallets
+
+## ColorProvider
+
+```js
+import { ColorProvider } from "justreact-ui";
+
+// default blur:4, transparency:0.2
+const App = () => {
+  <ColorProvider>
+    <Layout />
+  </ColorProvider>;
+};
+```
+
+### useColor()
+
+```js
+import { useColor, Card } from "justreact-ui";
+
+const component = () => {
+  const { color, handleColorChange } = useColor();
+
+  return (
+    <div className={` bg-gradient-t from-[${color.colors[1]}] to-[${color.colors[0]}] transition-all duration-400`}>
+
+     {Array.from({length:5}).map(_, index)=><Card key={index} onMouseEnter={()=>handleColorChange()}>}
+    </div>
+  )
+};
+```
+
 # justreact-ui
+
 ## Magnify-image (e-commerce)
 
-
-# `Props` 
+# `Props`
 
 ### src, alt, width, height
 
@@ -91,5 +124,3 @@
 import { Card, ImageMag } from "justreact-ui";
   const NewCard = () => <ImageMag src="path/url" alt="alternative" width={600} height={600} >);
 ```
-
-
