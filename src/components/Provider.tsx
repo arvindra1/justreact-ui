@@ -46,10 +46,8 @@ export const JustConsumer = JustContext.Consumer;
 // Define the custom hook for easy access to the context
 export const useColor = () => {
   const context = useContext(JustContext);
-
   if (context === undefined) {
     throw new Error("useJustContext must be used within a JustProvider");
   }
-
   return context;
 };
