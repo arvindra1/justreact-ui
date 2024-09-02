@@ -114,13 +114,40 @@ const component = () => {
 
 ## Magnify-image (e-commerce)
 
-# `Props`
-
 ### src, alt, width, height
 
 600px is the default width and height.
 
 ```js
-import { Card, ImageMag } from "justreact-ui";
-  const NewCard = () => <ImageMag src="path/url" alt="alternative" width={600} height={600} >);
+import { ImageMag } from "justreact-ui";
+
+const Image = () => {
+  return (
+    <ImageMag
+      src="/example.png"
+      alt="example"
+      width={500}
+      height={500}
+      scale={1.5}
+    />
+  );
+};
 ```
+
+## Loader
+
+```js
+import { Loader } from "justreact-ui";
+
+const App = () => {
+  return <Loader color="red" type="dots" size={50} />;
+};
+```
+
+# `Props Types`
+
+type: "spinner" | "dots" | "bars" | "ellipsis" | "pulse" | "ripple" | "dual-ring" | "heart" | "circle" | "grid"
+
+color:string
+
+size:number

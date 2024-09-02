@@ -7,7 +7,6 @@ import React, {
   useContext,
   useState,
 } from "react";
-
 // Define the type for the context state
 interface JustContextState {
   name: string;

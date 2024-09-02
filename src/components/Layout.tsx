@@ -26,6 +26,7 @@ const Root = React.forwardRef<HTMLDivElement, LayoutProps>(
         flexDirection: "row",
         height: "100vh",
         width: "100%",
+        overflow: "hidden",
         margin: 0,
       }}
     />
